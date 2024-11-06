@@ -215,8 +215,7 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
+    top: 0.6em;
     transform: rotate(315deg);
   }
 
