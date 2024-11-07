@@ -408,6 +408,7 @@ main .section.highlight {
 }
 
 /* Modifications */
+/* Padding */
 .p-0 {
   padding: 0;
 }
@@ -438,4 +439,25 @@ main .section.highlight {
 
 .p-4xl {
   padding: var(--spacing-xxlarge);
+}
+
+/* Max width */
+.max-w-s {
+  max-width: var(--width-small);
+}
+
+.max-w-m {
+  max-width: var(--width-medium);
+}
+
+.max-w-l {
+  max-width: var(--width-large);
+}
+
+.max-w-xl {
+  max-width: var(--width-xlarge);
+}
+
+.max-w-2xl {
+  max-width: var(--width-xxlarge);
 }
