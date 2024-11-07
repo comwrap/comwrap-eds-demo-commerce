@@ -422,6 +422,8 @@ main img {
 /* sections */
 main .section {
   /* padding: var(--spacing-large) var(--spacing-small); */
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
 }
 
 @media (width >=600px) {
