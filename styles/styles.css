@@ -62,9 +62,12 @@
   --grid-5-columns: 12;
   --grid-5-margins: 0;
   --grid-5-gutters: 24px;
-  --shape-border-radius-1: 3px;
-  --shape-border-radius-2: 8px;
-  --shape-border-radius-3: 24px;
+  --shape-border-radius-1: 2px;
+  --shape-border-radius-2: 4px;
+  --shape-border-radius-3: 8px;
+  --shape-border-radius-4: 16px;
+  --shape-border-radius-5: 24px;
+  --shape-border-radius-6: 32px;
   --shape-border-width-1: 1px;
   --shape-border-width-2: 1.5px;
   --shape-border-width-3: 2px;
@@ -89,6 +92,11 @@
   --spacing-huge: 120px;
   --spacing-xhuge: 144px;
   --spacing-xxhuge: 192px;
+  --width-small: 480px;
+  --width-medium: 768px;
+  --width-large: 1024px;
+  --width-xlarge: 1200px;
+  --width-xxlarge: 1440px;
   --type-base-font-family: Inter, roboto, roboto-fallback;
   --type-display-1-font: normal normal 300 3.6rem/7.2rem
     var(--type-base-font-family);
@@ -302,7 +310,7 @@ button.button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: var(--shape-border-radius-3);
+  border-radius: var(--shape-border-radius-6);
 }
 
 main a.button:hover,
@@ -397,4 +405,37 @@ main .section.highlight {
 /* Base Design System Tokens */
 .dropin-design.dropin-design {
   --background-none: none 0 0% no-repeat padding-box;
+}
+
+/* Modifications */
+.p-0 {
+  padding: 0;
+}
+
+.p-s {
+  padding: var(--spacing-small);
+}
+
+.p-m {
+  padding: var(--spacing-medium);
+}
+
+.p-l {
+  padding: var(--spacing-big);
+}
+
+.p-xl {
+  padding: var(--spacing-xbig);
+}
+
+.p-2xl {
+  padding: var(--spacing-large);
+}
+
+.p-3xl {
+  padding: var(--spacing-xlarge);
+}
+
+.p-4xl {
+  padding: var(--spacing-xxlarge);
 }
