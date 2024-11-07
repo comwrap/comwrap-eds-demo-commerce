@@ -68,6 +68,8 @@
   --shape-border-radius-4: 16px;
   --shape-border-radius-5: 24px;
   --shape-border-radius-6: 32px;
+  --shape-border-radius-7: 40px;
+  --shape-border-radius-8: 48px;
   --shape-border-width-1: 1px;
   --shape-border-width-2: 1.5px;
   --shape-border-width-3: 2px;
@@ -460,4 +462,41 @@ main .section.highlight {
 
 .max-w-2xl {
   max-width: var(--width-xxlarge);
+}
+
+/* Radius */
+.rounded-2xs {
+  border-radius: var(--shape-border-radius-1);
+}
+
+.rounded-xs {
+  border-radius: var(--shape-border-radius-2);
+}
+
+.rounded-s {
+  border-radius: var(--shape-border-radius-3);
+}
+
+.rounded-m {
+  border-radius: var(--shape-border-radius-4);
+}
+
+.rounded-l {
+  border-radius: var(--shape-border-radius-5);
+}
+
+.rounded-xl {
+  border-radius: var(--shape-border-radius-6);
+}
+
+.rounded-2xl {
+  border-radius: var(--shape-border-radius-7);
+}
+
+.rounded-3xl {
+  border-radius: var(--shape-border-radius-8);
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
