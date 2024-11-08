@@ -1,6 +1,7 @@
 /* Grid */
 .grid > div {
   display: flex;
+  gap: var(--grid-3-gutters);
 }
 
 .grid > div > div {
