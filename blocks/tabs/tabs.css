@@ -1,58 +1,65 @@
 .tabs .tabs-list {
-    display: flex;
-    gap: 0.5ch;
-    max-width: 100%;
-    font-size: var(--body-font-size-xs);
-    overflow-x: auto;
-  }
+  display: flex;
+  gap: 0.5ch;
+  max-width: 100%;
+  font-size: var(--body-font-size-xs);
+  overflow-x: auto;
+}
   
-  @media (width >= 600px) {
-    .tabs .tabs-list {
-      font-size: var(--body-font-size-s);
-    }
+@media (width >= 600px) {
+  .tabs .tabs-list {
+    font-size: var(--body-font-size-s);
   }
-  
-  @media (width >= 900px) {
-    .tabs .tabs-list {
-      font-size: var(--body-font-size-m);
-    }
+}
+
+@media (width >= 900px) {
+  .tabs .tabs-list {
+    font-size: var(--body-font-size-m);
   }
+}
   
-  .tabs .tabs-list button {
-    flex: 0 0 max-content;
-    margin: 0;
-    border: 1px solid #dadada;
-    border-radius: 0;
-    padding: 0.8rem 1.6rem;
-    background-color: var(--light-color);
-    color: initial;
-    font-weight: 500;
-    line-height: unset;
-    text-align: initial;
-    text-overflow: unset;
-    overflow: unset;
-    white-space: unset;
-    transition: background-color 0.2s;
-  }
-  
-  .tabs .tabs-list button p {
-    margin: 0;
-  }
-  
-  
-  .tabs .tabs-list button[aria-selected='true'] {
-    border-bottom: 1px solid var(--background-color);
-    background-color: var(--background-color);
-    cursor: initial;
-  }
-  
-  .tabs .tabs-panel {
-    margin-top: -1px;
-    padding: 24px;
-    border: 1px solid #dadada;
-    overflow: auto;
-  }
-  
-  .tabs .tabs-panel[aria-hidden='true'] {
-    display: none;
-  }
+.tabs .tabs-list button {
+  flex: 0 0 max-content;
+  margin: 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--light-color);
+  color: var(--color-brand-500);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: initial;
+  text-overflow: unset;
+  overflow: unset;
+  white-space: unset;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.tabs .tabs-list button:hover {
+  color: var(--color-brand-600);
+}
+
+.tabs .tabs-list button p {
+  margin: 0;
+}
+
+
+.tabs .tabs-list button[aria-selected='true'] {
+  border-bottom: 2px solid var(--color-black);
+  background-color: var(--background-color);
+  color: var(--color-black);
+  cursor: initial;
+}
+
+.tabs .tabs-panel {
+  margin-top: -2px;
+  border-top: 2px solid var(--color-neutral-300);
+  overflow: auto;
+}
+
+.tabs .tabs-panel[aria-hidden='true'] {
+  display: none;
+}
