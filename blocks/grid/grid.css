@@ -7,3 +7,9 @@
 .grid > div > div {
   flex: 1 1 auto;
 }
+
+@media (width < 768px) {
+  .grid > div {
+    flex-direction: column;
+  }
+}
