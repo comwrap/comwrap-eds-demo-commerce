@@ -4,6 +4,8 @@ main .hero-container > div {
 
 main .hero-container > .default-content-wrapper {
   max-width: var(--width-xlarge);
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
 }
 
 main .hero-container {
@@ -11,11 +13,14 @@ main .hero-container {
 }
 
 .hero-container .hero-wrapper {
+  /* display: flex; */
+  /* justify-content: center; */
   position: relative;
   z-index: 1;
 }
 
 .hero {
+  /* width: 100%; */
   position: relative;
   padding: var(--spacing-big);
   min-height: 300px;
@@ -42,8 +47,6 @@ main .hero-container {
 }
 
 .hero.block {
-  margin-left: auto;
-  margin-right: auto;
   box-sizing: border-box;
   overflow: hidden;
 }
