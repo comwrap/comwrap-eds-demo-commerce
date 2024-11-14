@@ -122,8 +122,8 @@ main .carousel-container {
 
 .carousel .carousel-navigation-buttons {
   position: absolute;
-  /* top: 50%; */
-  /* left: 12px; */
+  top: 50%;
+  left:  var(--spacing-medium);
   transform: translateY(-50%);
   right: var(--spacing-medium);
   display: flex;
