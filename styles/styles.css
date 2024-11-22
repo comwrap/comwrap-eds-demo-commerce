@@ -12,6 +12,7 @@
  * governing permissions and limitations under the License.
  */
 
+/* Design Tokens */
 :root {
   /* Adobe Commerce Dropin design tokens */
   --color-brand-300: #4D8EFF;
@@ -113,7 +114,7 @@
   --width-large: 1024px;
   --width-xlarge: 1200px;
   --width-xxlarge: 1440px;
-  --type-base-font-family: Inter, roboto, roboto-fallback;
+  --type-base-font-family: inter, roboto, roboto-fallback;
   --type-display-1-font: normal normal 300 3.6rem/5.6rem
     var(--type-base-font-family);
   --type-display-1-letter-spacing: unset;
@@ -437,8 +438,8 @@ main img {
 /* sections */
 main .section {
   /* padding: var(--spacing-large) var(--spacing-small); */
-  margin-top: var(--spacing-medium);
-  margin-bottom: var(--spacing-medium);
+  margin-top: var(--spacing-xbig);
+  margin-bottom: var(--spacing-xbig);
   padding-left: var(--spacing-medium);
   padding-right: var(--spacing-medium);
   box-sizing: border-box;
@@ -469,6 +470,7 @@ main .section.highlight {
 }
 
 /* Modifications */
+
 /* Margin */
 .m-auto	{
   margin: auto;
