@@ -12,4 +12,10 @@
   .grid > div {
     flex-direction: column;
   }
+
+  .grid[class*="gap-"] {
+    > div {
+      gap: var(--spacing-big);
+    }
+  }
 }

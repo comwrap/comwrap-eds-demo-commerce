@@ -1,6 +1,8 @@
+/* Columns */
 .columns > div {
   display: flex;
   flex-direction: column;
+  gap: var(--spacing-big);
 }
 
 .columns img {
@@ -19,15 +21,22 @@
   display: block;
 }
 
-@media (width >= 900px) {
+@media (width >= 768px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+  }
+}
+
+@media (width < 768px) {
+  .columns[class*="gap-"] {
+    > div {
+      gap: var(--spacing-big);
+    }
   }
 }
