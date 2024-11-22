@@ -635,6 +635,61 @@ main .section.highlight {
   border-radius: 9999px;
 }
 
+/* Image Radius */
+.image-rounded-2xs {
+  img {
+    border-radius: var(--shape-border-radius-1);
+  }
+}
+
+.image-rounded-xs {
+  img {
+    border-radius: var(--shape-border-radius-2);
+  }
+}
+
+.image-rounded-s {
+  img {
+    border-radius: var(--shape-border-radius-3);
+  }
+}
+
+.image-rounded-m {
+  img {
+    border-radius: var(--shape-border-radius-4);
+  }
+}
+
+.image-rounded-l {
+  img {
+    border-radius: var(--shape-border-radius-5);
+  }
+}
+
+.image-rounded-xl {
+  img {
+    border-radius: var(--shape-border-radius-6);
+  }
+}
+
+.image-rounded-2xl {
+  img {
+    border-radius: var(--shape-border-radius-7);
+  }
+}
+
+.image-rounded-3xl {
+  img {
+    border-radius: var(--shape-border-radius-8);
+  }
+}
+
+.image-rounded-full {
+  img {
+    border-radius: 9999px;
+  }
+}
+
 /* Background */
 .bg-neutral-50 {
   background-color: var(--color-neutral-50);
