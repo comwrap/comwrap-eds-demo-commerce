@@ -440,6 +440,7 @@ main .section {
   /* padding: var(--spacing-large) var(--spacing-small); */
   margin-top: var(--spacing-xbig);
   margin-bottom: var(--spacing-xbig);
+  padding-top: 1px;
   padding-left: var(--spacing-medium);
   padding-right: var(--spacing-medium);
   box-sizing: border-box;
