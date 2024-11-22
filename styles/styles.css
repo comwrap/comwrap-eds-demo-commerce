@@ -560,6 +560,63 @@ main .section.highlight {
   padding: var(--spacing-xxlarge);
 }
 
+/* Gap for Grid and Columns */
+.gap-0.grid,
+.gap-0.columns {
+  > div {
+    gap: 0;
+  }
+}
+
+.gap-s.grid,
+.gap-s.columns {
+  > div {
+    gap: var(--spacing-small);
+  }
+}
+
+.gap-m.grid,
+.gap-m.columns {
+  > div {
+    gap: var(--spacing-medium);
+  }
+}
+
+.gap-l.grid,
+.gap-l.columns {
+  > div {
+    gap: var(--spacing-big);
+  }
+}
+
+.gap-xl.grid,
+.gap-xl.columns {
+  > div {
+    gap: var(--spacing-xbig);
+  }
+}
+
+.gap-2xl.grid,
+.gap-2xl.columns {
+  > div {
+    gap: var(--spacing-large);
+  }
+}
+
+.gap-3xl.grid,
+.gap-3xl.columns {
+  > div {
+    gap: var(--spacing-xlarge);
+  }
+}
+
+.gap-4xl.grid,
+.gap-4xl.columns {
+  > div {
+    gap: var(--spacing-xxlarge);
+  }
+}
+
 /* Max width */
 .max-w-s {
   max-width: var(--width-small);
