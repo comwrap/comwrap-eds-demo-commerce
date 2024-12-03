@@ -72,11 +72,12 @@ const pluginContext = {
 function buildHeroBlock(main) {
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
-  const h1MainParent = h1.parentElement.parentElement;
-  const pictureMainParent = picture.parentElement.parentElement.parentElement;
+  const h1MainParent = h1?.parentElement.parentElement;
+  const pictureMainParent = picture?.parentElement.parentElement.parentElement;
   // eslint-disable-next-line no-bitwise
-  if(h1MainParent.tagName === 'MAIN' && pictureMainParent.tagName === 'MAIN') {
-    if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
+  if (h1MainParent?.tagName === 'MAIN' && pictureMainParent?.tagName === 'MAIN') {
+    // eslint-disable-next-line max-len
+    if (h1 && picture && (h1.compareDocumentPosition(picture) && Node.DOCUMENT_POSITION_PRECEDING)) {
       const section = document.createElement('div');
       section.append(buildBlock('hero', { elems: [picture, h1] }));
       main.prepend(section);
