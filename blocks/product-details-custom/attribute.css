@@ -1,0 +1,17 @@
+/* Styles */
+.product-details-attribute {
+    dl {
+        margin-top: var(--spacing-small);
+        margin-bottom: var(--spacing-small);
+    }
+
+    dt {
+        display: inline-block;
+        font-weight: 600;
+    }
+    
+    dd {
+        display: inline-block;
+        margin-left: var(--spacing-medium);
+    }
+}

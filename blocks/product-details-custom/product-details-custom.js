@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable class-methods-use-this */
 import {
   Component, Fragment, h, render,
@@ -5,6 +6,7 @@ import {
 
 import htm from '../../scripts/htm.js';
 import Carousel from './ProductDetailsCarousel.js';
+import Attribute from './ProductDetailsAttribute.js';
 import Sidebar from './ProductDetailsSidebar.js';
 import ProductDetailsShimmer from './ProductDetailsShimmer.js';
 import {
@@ -183,6 +185,11 @@ class ProductDetailPage extends Component {
     return html`
       <${Fragment} >
         <${Carousel} product=${this.state.product} sku=${this.props.sku} />
+        <div class="product-details">
+          <div class="product-detail-short-description">
+            <div dangerouslySetInnerHTML=${{ __html: this.state.product.shortDescription }}></div>
+          </div>
+        </div>
         <${Sidebar}
           product=${this.state.product}
           selection=${this.state.selection}
@@ -191,9 +198,21 @@ class ProductDetailPage extends Component {
           onAddToWishlist=${this.onAddToWishlist}
           onQuantityChanged=${this.onQuantityChanged}
         />
-        <div class="product-detail-description">
-          <h3>Product Details</h3>
-          <div dangerouslySetInnerHTML=${{ __html: this.state.product.description }}></div>
+        <div class="product-details product-details-collapsible">
+          <div class="collapsible">
+            <details class="collapsible-item" name="product-details">
+              <summary class="collapsible-item-label">Product Details</summary>
+              <div class="collapsible-item-body">
+                <div dangerouslySetInnerHTML=${{ __html: this.state.product.description }}></div>
+              </div>
+            </details>
+            <details class="collapsible-item" name="product-details">
+              <summary class="collapsible-item-label">Product Attributes</summary>
+              <div class="collapsible-item-body">
+                <${Attribute} product=${this.state.product} />
+            </div>
+            </details>
+          </div>
         </div>
       <//>
     `;

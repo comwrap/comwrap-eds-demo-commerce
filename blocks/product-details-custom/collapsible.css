@@ -1,0 +1,49 @@
+/* Styles */
+.collapsible {
+    details {
+        border-top: 2px solid var(--color-neutral-300);
+        padding-top: var(--spacing-small);
+        padding-bottom: var(--spacing-small);
+    
+        &:first-child {
+            border-top: 0;
+        }
+
+        summary {
+            font: var(--type-headline-2-strong-font);
+            position: relative;
+            padding-right: var(--spacing-large);
+            cursor: pointer;
+            list-style: none;
+            overflow: auto;
+            transition: background-color 0.2s;
+            padding-top: var(--spacing-xsmall);
+            padding-bottom: var(--spacing-xsmall);
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 45%;
+                right: 6px;
+                transform: translateY(-45%) rotate(135deg);
+                width: 12px;
+                height: 12px;
+                border: 2px solid;
+                border-width: 3px 3px 0 0;
+                transition: transform 0.2s;
+            }
+        }
+    } 
+
+    details[open] {
+        summary {
+            &::after {
+                transform: translateY(-15%) rotate(-45deg);
+            }
+        }
+    }
+}
