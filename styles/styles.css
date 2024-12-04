@@ -230,8 +230,8 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 1.5625em;
-  margin-bottom: 1.5625em;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
 }
 
 strong,
