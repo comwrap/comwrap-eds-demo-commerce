@@ -1,0 +1,4 @@
+/* Carousel drop in */
+.pdp-carousel__thumbnail__span {
+    border-radius: var(--shape-border-radius-3);
+}

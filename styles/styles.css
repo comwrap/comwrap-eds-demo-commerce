@@ -12,6 +12,9 @@
  * governing permissions and limitations under the License.
  */
 
+ /* Imports */
+@import './drop-in.css';
+
 /* Design Tokens */
 :root {
   /* Adobe Commerce Dropin design tokens */

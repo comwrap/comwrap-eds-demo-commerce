@@ -1,0 +1,31 @@
+/* Imports */
+@import 'drop-in/carousel.css';
+/* @import 'drop-in/gallery-grid.css'; */
+/* @import 'drop-in/overlay.css'; */
+/* @import 'drop-in/price-range.css'; */
+/* @import 'drop-in/product.css'; */
+/* @import 'drop-in/swatches.css'; */
+
+/* Styles */
+.dropin-design {
+    /* Commerce design tokens */
+    --color-brand-300: #4D8EFF;
+    --color-brand-500: #0072F2;
+    --color-brand-600: #005AC3;
+    --color-brand-700: #000;
+}
+
+.dropin-button {
+    border-radius: var(--shape-border-radius-6);
+}
+
+.dropin-incrementer__content,
+.dropin-incrementer__button-container {
+    border-radius: var(--shape-border-radius-6);
+}
+
+.dropin-incrementer__button-container {
+    button {
+        border-radius: var(--shape-border-radius-6);
+    }
+}
