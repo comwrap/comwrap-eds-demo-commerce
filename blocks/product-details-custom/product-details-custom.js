@@ -7,6 +7,7 @@ import {
 import htm from '../../scripts/htm.js';
 import Carousel from './ProductDetailsCarousel.js';
 import Attribute from './ProductDetailsAttribute.js';
+import ProductDetailsContentBlock from './ProductDetailsContentBlock.js';
 import Sidebar from './ProductDetailsSidebar.js';
 import ProductDetailsShimmer from './ProductDetailsShimmer.js';
 import {
@@ -189,6 +190,7 @@ class ProductDetailPage extends Component {
           <div class="product-detail-short-description">
             <div dangerouslySetInnerHTML=${{ __html: this.state.product.shortDescription }}></div>
           </div>
+          <${ProductDetailsContentBlock} />
         </div>
         <${Sidebar}
           product=${this.state.product}
