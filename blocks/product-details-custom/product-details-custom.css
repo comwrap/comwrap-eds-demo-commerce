@@ -1,6 +1,11 @@
 /* stylelint-disable comment-empty-line-before */
 /* stylelint-disable no-descending-specificity */
 /* stylelint-disable declaration-block-no-redundant-longhand-properties */
+
+/* Imports */
+@import 'feature-list.css';
+
+/* Styles */
 .product-details-custom {
   display: grid !important;
   grid-template: 'product-title' 'carousel';
@@ -39,7 +44,6 @@
 }
 
 .product-details-custom .sidebar-section {
-  border-bottom: 1px solid #c2c2c2;
   padding: 0 0 2rem;
   margin: 0 0 2rem;
 }
@@ -79,8 +83,8 @@
 }
 
 .product-details-custom .sidebar-section.quantity-select {
-  display: flex;
-  gap: 25px;
+  /* display: flex; */
+  /* gap: 25px; */
   align-items: center;
 }
 
@@ -432,8 +436,10 @@
 
   .product-details-custom {
     display: grid;
-    grid-template-columns: auto 30%;
+    grid-template-columns: auto 40%;
     grid-auto-flow: column;
+    max-width: var(--width-xlarge);
+    margin: 0 auto;
   }
 
   .product-details-custom > *:not(.product-detail-carousel) {
@@ -461,12 +467,13 @@
   .product-details-custom .sidebar {
     grid-column: 2;
     grid-row: 1 / 3;
-    border: 1px solid #c2c2c2;
     height: max-content;
+    background-color: var(--color-neutral-100);
+    border-radius: var(--shape-border-radius-4);
   }
 
   .product-details-custom .sidebar .sidebar-section {
-    padding: 25px;
+    padding: var(--spacing-big);
     margin: 0;
     position: relative;
   }
@@ -474,6 +481,10 @@
   .product-details-custom .product-detail-description {
     grid-column: 1;
     padding-left: 10px;
+  }
+
+  .product-details-custom .product-details {
+    grid-column: 1;
   }
 
   .product-details-custom .product-detail-carousel {
@@ -507,7 +518,7 @@
   }
 
   .product-details-custom .product-detail-carousel .carousel-stage-wrapper {
-    margin-left: 27%;
+    margin-left: 12rem;
     position: relative;
     height: 888px;
     min-width: unset;
@@ -552,8 +563,8 @@
 
   .product-details-custom .product-detail-carousel .carousel-thumbnails img {
     aspect-ratio: 247/313;
-    width: 247px;
-    height: 313px;
+    width: 10rem;
+    height: auto;
   }
 
   .product-details-custom .product-detail-carousel .carousel-thumbnails picture {

@@ -1,0 +1,32 @@
+/* stylelint-disable comment-empty-line-before */
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+
+/* Styles */
+.product-detail-short-description {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: var(--spacing-big);
+  }
+
+  li::before {
+    position: absolute;
+    left: 0;
+    top: .4rem;
+    content: '';
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: var(--shape-border-radius-6);
+    display: block;
+    background-image: url('../../icons/check.svg');
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-brand-500);
+  }
+}
